@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
+    <RootNamespace>siof.Common</RootNamespace>
+    <PackageLicenseUrl>https://github.com/siof/common.notifyobject/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/siof/common.notifyobject</PackageProjectUrl>
+    <Copyright>siof</Copyright>
+    <RepositoryUrl>https://github.com/siof/common.notifyobject</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags />
+    <Authors>siof</Authors>
+    <Company />
+    <Product />
   </PropertyGroup>
 
 </Project>
