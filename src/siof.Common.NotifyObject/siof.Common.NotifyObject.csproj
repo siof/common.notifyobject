@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.0</TargetFramework>
+    <TargetFrameworks>netstandard1.0;net4</TargetFrameworks>
     <RootNamespace>siof.Common</RootNamespace>
     <PackageLicenseUrl>https://github.com/siof/common.notifyobject/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/siof/common.notifyobject</PackageProjectUrl>
@@ -12,6 +12,7 @@
     <Authors>siof</Authors>
     <Company />
     <Product />
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>
