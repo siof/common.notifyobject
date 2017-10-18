@@ -13,6 +13,7 @@
     <Company />
     <Product />
     <Version>1.0.1</Version>
+    <Description>Simple library with NotifyObject class implementing INotifyPropertyChanged for easy use in MVVM projects</Description>
   </PropertyGroup>
 
 </Project>
