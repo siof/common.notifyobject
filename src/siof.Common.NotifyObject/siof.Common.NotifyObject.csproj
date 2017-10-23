@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.0;net4</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net4</TargetFrameworks>
     <RootNamespace>siof.Common</RootNamespace>
     <PackageLicenseUrl>https://github.com/siof/common.notifyobject/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/siof/common.notifyobject</PackageProjectUrl>
@@ -12,7 +12,7 @@
     <Authors>siof</Authors>
     <Company />
     <Product />
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Description>Simple library with NotifyObject class implementing INotifyPropertyChanged for easy use in MVVM projects</Description>
   </PropertyGroup>
 

@@ -26,7 +26,7 @@ namespace siof.Common
         {
             try
             {
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(Helpers.GetPropertyName(extension)));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(GetPropertyName(extension)));
             }
             catch (Exception)
             {
@@ -43,6 +43,16 @@ namespace siof.Common
             }
 
             IsDisposed = true;
+        }
+
+        public static string GetPropertyName(Expression<Func<object>> extension)
+        {
+            UnaryExpression unaryExpression = extension.Body as UnaryExpression;
+            MemberExpression memberExpression = unaryExpression != null ?
+                (MemberExpression)unaryExpression.Operand :
+                (MemberExpression)extension.Body;
+
+            return memberExpression.Member.Name;
         }
     }
 }
