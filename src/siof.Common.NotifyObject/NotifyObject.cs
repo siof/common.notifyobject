@@ -37,8 +37,8 @@ namespace siof.Common
         {
             if (PropertyChanged != null)
             {
-                var delgates = PropertyChanged.GetInvocationList().ToList();
-                foreach (var del in delgates)
+                var delegates = PropertyChanged.GetInvocationList().ToList();
+                foreach (var del in delegates)
                     PropertyChanged -= (PropertyChangedEventHandler)del;
             }
 
@@ -47,8 +47,7 @@ namespace siof.Common
 
         public static string GetPropertyName(Expression<Func<object>> extension)
         {
-            UnaryExpression unaryExpression = extension.Body as UnaryExpression;
-            MemberExpression memberExpression = unaryExpression != null ?
+            MemberExpression memberExpression = extension.Body is UnaryExpression unaryExpression ?
                 (MemberExpression)unaryExpression.Operand :
                 (MemberExpression)extension.Body;
 
