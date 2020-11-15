@@ -22,6 +22,7 @@
     <Title>Common.NotifyObject</Title>
     <PackageReleaseNotes>1.1.0 - Added .net 5.0 target, Merged PR with SourceLink support</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
