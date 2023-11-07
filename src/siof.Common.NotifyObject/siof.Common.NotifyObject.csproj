@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net40;netstandard2.0;net5.0</TargetFrameworks>
+    <TargetFrameworks>net5.0;netstandard2.0;net481</TargetFrameworks>
     <RootNamespace>siof.Common</RootNamespace>
     <PackageLicenseUrl>https://github.com/siof/common.notifyobject/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/siof/common.notifyobject</PackageProjectUrl>
@@ -12,21 +12,24 @@
     <Authors>siof</Authors>
     <Company />
     <Product />
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <Description>Simple library with NotifyObject class implementing INotifyPropertyChanged for easy use in MVVM projects</Description>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>default</LangVersion>
-    <PackageVersion>1.1.0</PackageVersion>
+    <PackageVersion>1.2.0</PackageVersion>
     <Title>Common.NotifyObject</Title>
-    <PackageReleaseNotes>1.1.0 - Added .net 5.0 target, Merged PR with SourceLink support</PackageReleaseNotes>
+    <PackageReleaseNotes>
+      1.1.0 - Added .net 5.0 target, Merged PR with SourceLink support
+      1.2.0 - Added CallerMemberName to OnPropertyChanged(string) method and raised .net framework version to 4.8.1
+    </PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
   </ItemGroup>
 
 
